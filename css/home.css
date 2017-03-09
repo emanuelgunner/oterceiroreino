@@ -23,8 +23,8 @@
         display: block;
         color: white; }
       .menu ul li a:hover {
-        color: #d7d7d7;
-        background-color: rgba(0, 0, 0, 0.5); }
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.5); }
 
 .img-bg {
   width: 100%;
@@ -58,8 +58,10 @@
     font-size: 20px; }
 
 .persona {
-  width: 33.3%;
-  height: 430px;
+  width: 30.5%;
+  margin: 2% 0 2% 2%;
+  border: 1px #ededed solid;
+  height: 450px;
   display: inline-block;
   float: left;
   text-align: center; }
@@ -67,13 +69,12 @@
     padding: 10px 0;
     font-family: "Josefin Sans", sans-serif; }
   .persona img {
+    border: 3px solid #fff;
     width: 90%;
-    transition: 0.5s ease;
-    border-radius: 5px; }
-  .persona img:hover {
-    width: 95%; }
+    transition: 0; }
   .persona p {
     text-align: justify;
+    font-size: 18px;
     padding: 0 5%;
     font-family: "Josefin Sans", sans-serif; }
     .persona p span a {
@@ -85,6 +86,34 @@
     .persona p span a:hover {
       color: #f90;
       text-decoration: underline; }
+
+.persona:hover {
+  box-shadow: 1px 1px 10px #000;
+  border: 1px #fff solid;
+  color: #fff; }
+  .persona:hover img {
+    border: 3px solid #fff; }
+
+.persona-1:hover {
+  background-color: grey;
+  color: #fff; }
+
+.persona-2:hover {
+  background-color: blue;
+  color: #fff; }
+
+.persona-3:hover {
+  background-color: purple;
+  color: #fff; }
+
+.persona-4:hover {
+  background-color: green; }
+
+.persona-5:hover {
+  background-color: grey; }
+
+.persona-6:hover {
+  background-color: orange; }
 
 @media screen and (min-width: 0px) and (max-width: 420px) {
   .logo {

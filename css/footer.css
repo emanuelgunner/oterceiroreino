@@ -8,5 +8,8 @@
     text-align: center;
     padding: 20px;
     font-weight: normal; }
+    .rodape .text-rodape span {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px; }
 
 /*# sourceMappingURL=footer.css.map */
