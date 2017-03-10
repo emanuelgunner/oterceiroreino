@@ -80,7 +80,8 @@ header label {
   .persona img {
     border: 3px solid #fff;
     width: 90%;
-    transition: 0; }
+    transition: 0;
+    box-shadow: 1px 1px 10px #000; }
   .persona p {
     text-align: justify;
     font-size: 18px;
@@ -141,7 +142,7 @@ header label {
   header label {
     z-index: 100000;
     display: block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #393939;
     padding: 20px;
     cursor: pointer; }
     header label .barrinha {
