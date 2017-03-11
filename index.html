@@ -7,27 +7,14 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		$('div.img-bg').each(function(){
-			var $obj = $(this);
+	<script src="js/javascript.js"></script>
 
-		$(window).scroll(function() {
-			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
-			var bgpos = '50% '+ yPos + 'px';
-
-			$obj.css('background-position', bgpos );
-
-		}); 
-		});	
-		});
-	</script>
 
 	<title>O Terceiro Reino - D&D</title>
 </head>
+
 <body>
-	<section class="container">
+	<section class="container" id="all">
 		<header>
 			<input type="checkbox" id="btn_menu">
 			<label for="btn_menu"><div class="barrinha"></div><!--&#9776; Menu--></label>
@@ -64,13 +51,13 @@
 
 			<h1>Backgrounds dos Personagens</h1>
 			<div class="persona persona-1">
-				<h2>Gruark</h2>
+				<h2>Gruark (José Valderli)</h2>
 				<img src="images/persona-1.jpg" alt="personagem 1">
 				<p>Ainda bebê, Gruark foi abandonado em uma humilde vila. Cresceu aos cuidados de um ferreiro que o ensinou a criar sua primeira espada. Com ela, ele salvou a vida do seu “pai” quando a vila foi invadida...<br><span class="ler-mais"><a href="#">Ler mais...</a></span></p>
 			</div>
 
 			<div class="persona persona-2">
-				<h2>Lagorúthneth</h2>
+				<h2>Lagorúthneth (Maíra Marques)</h2>
 				<img src="images/persona-2.jpg" alt="personagem 2">
 				<p>Lagorúthneth é uma meia Elfa Lunar que já foi membro da Ordem de Prata. Ela entrou para o grupo logo no começo, ao ser convencida pelo poder. Sacrificaram o grupo antigo dela e a partir dali começaram outros...<br><span class="ler-mais"><a href="#">Ler mais...</a></span></p>
 			</div>
@@ -104,6 +91,8 @@
 		<footer class="rodape">
 			<h1 class="text-rodape">O Terceiro Reino ©
 			<br><span>Todos os direitos reservados - 2017</span></h1>
+		
+
 		</footer>
 
 	</section>
