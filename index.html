@@ -5,6 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('div.img-bg').each(function(){
+			var $obj = $(this);
+
+		$(window).scroll(function() {
+			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+
+			var bgpos = '50% '+ yPos + 'px';
+
+			$obj.css('background-position', bgpos );
+
+		}); 
+		});	
+		});
+	</script>
 
 	<title>O Terceiro Reino - D&D</title>
 </head>
@@ -22,7 +39,7 @@
 					<li><a href="#">Contato</a></li>
 				</ul>
 			</nav>
-			<div class="img-bg"></div>
+			<div class="img-bg" data-speed="10"></div>
 		</header>
 		<section class="cont-1">
 			<h1>O Início de tudo. (Prólogo)</h1>
