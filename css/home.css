@@ -153,7 +153,8 @@ header label {
       height: 3px;
       background-color: #000;
       position: absolute;
-      background-color: #fff; }
+      background-color: #fff;
+      transition: all 0.3s linear; }
     header label .barrinha:after {
       position: absolute;
       content: "";
@@ -161,7 +162,8 @@ header label {
       height: 3px;
       top: 5px;
       left: 0;
-      background-color: #fff; }
+      background-color: #fff;
+      transition: all 0.3s linear; }
     header label .barrinha:before {
       position: absolute;
       content: "";
@@ -169,7 +171,8 @@ header label {
       height: 3px;
       top: -5px;
       left: 0;
-      background-color: #fff; }
+      background-color: #fff;
+      transition: all 0.3s linear; }
 
   .menu {
     background-color: rgba(0, 0, 0, 0.5);
@@ -187,6 +190,15 @@ header label {
 
   #btn_menu:checked ~ .menu ul {
     margin-left: 0; }
+
+  #btn_menu:checked ~ label .barrinha {
+    background-color: transparent; }
+
+  #btn_menu:checked ~ label .barrinha:before {
+    transform: translate(0px, 5px) rotate(45deg); }
+
+  #btn_menu:checked ~ label .barrinha:after {
+    transform: translate(0px, -5px) rotate(-45deg); }
 
   .img-bg {
     width: 100%;
