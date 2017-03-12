@@ -63,7 +63,8 @@ header label {
     font-size: 30px;
     color: #fff; }
   .cont-1 div {
-    z-index: 0; }
+    z-index: 0;
+    width: 100%; }
   .cont-1 .parag-1 {
     padding: 10px 0 10px 0;
     text-align: justify;
