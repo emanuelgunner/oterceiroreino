@@ -1,0 +1,33 @@
+.video-sessao {
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  background-color: red; }
+
+#video-sessao {
+  width: 100%;
+  height: 100%; }
+
+.controle ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; }
+  .controle ul li {
+    width: 25%;
+    margin: 2px; }
+    .controle ul li a {
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-family: "Josefin Sans", sans-serif;
+      background-color: red; }
+    .controle ul li a:hover {
+      background-color: rgba(255, 0, 0, 0.5);
+      color: #000; }
+
+/*# sourceMappingURL=eps.css.map */

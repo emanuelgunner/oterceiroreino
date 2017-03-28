@@ -1,0 +1,41 @@
+#cont-avatar-1 {
+  margin: 50px 0 0 0; }
+
+.cont-avatar {
+  margin: 10px 0;
+  width: 100%;
+  height: auto; }
+  .cont-avatar .cont-img, .cont-avatar .cont-txt {
+    display: block;
+    float: left; }
+    .cont-avatar .cont-img img, .cont-avatar .cont-txt img {
+      width: 100%;
+      box-shadow: 1px 1px 10px #000;
+      border-radius: 10px; }
+  .cont-avatar .cont-img {
+    width: 25%; }
+  .cont-avatar .cont-txt {
+    width: 71%;
+    padding: 0 2%; }
+    .cont-avatar .cont-txt h2 {
+      font-family: "Josefin Sans", sans-serif; }
+    .cont-avatar .cont-txt p {
+      margin: 10px 0;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px; }
+
+.clear {
+  clear: both; }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .cont-avatar .cont-txt h2 {
+    text-align: center;
+    background-color: #383838;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 0;
+    font-size: 18px; }
+  .cont-avatar .cont-txt p {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=quem-somos.css.map */

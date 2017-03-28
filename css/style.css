@@ -38,11 +38,19 @@ header label {
       background-color: #fff;
       color: #000; }
 
+.selected a {
+  background-color: #000; }
+
+.bar-div {
+  width: 100%;
+  height: 10px;
+  background-color: #066ada; }
+
 .img-bg {
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-color: blue;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.jpg);
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: repeat; }
@@ -71,18 +79,61 @@ header label {
     text-indent: 75px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px; }
+  .cont-1 .parag-2 {
+    padding: 5px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 0;
+    text-align: center;
+    background-color: #066ada;
+    color: #fff; }
+  .cont-1 .btn-voltar {
+    z-index: 100000;
+    position: fixed;
+    width: 130px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 4%;
+    right: 3%;
+    display: none; }
+  .cont-1 .btn-voltar:hover {
+    background-color: #f90;
+    box-shadow: 1px 1px 5px #000; }
+  .cont-1 .btn-voltar-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8em; }
 
 .persona {
   width: 30.5%;
   margin: 2% 0 2% 2%;
   border: 1px #ededed solid;
-  height: 450px;
+  height: 500px;
   display: inline-block;
   float: left;
-  text-align: center; }
+  text-align: center;
+  color: #000;
+  cursor: pointer; }
   .persona h2 {
     padding: 10px 0;
     font-family: "Josefin Sans", sans-serif; }
+    .persona h2 span {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 10px; }
+      .persona h2 span a {
+        color: #066ada;
+        text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 10px; }
+      .persona h2 span a:hover {
+        color: #f90;
+        text-decoration: underline; }
   .persona img {
     border: 3px solid #fff;
     width: 90%;
@@ -99,7 +150,8 @@ header label {
       font-weight: bold;
       font-family: "Exo 2", sans-serif;
       text-transform: uppercase;
-      text-align: right; }
+      text-align: right;
+      font-size: 12px; }
     .persona p span a:hover {
       color: #f90;
       text-decoration: underline; }
@@ -110,6 +162,17 @@ header label {
   color: #fff; }
   .persona:hover img {
     border: 3px solid #fff; }
+  .persona:hover a {
+    color: #fff; }
+
+.persona-bg {
+  width: 75%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto; }
+  .persona-bg img {
+    float: left;
+    width: 100%; }
 
 .persona-1:hover {
   background-color: grey;
@@ -134,16 +197,14 @@ header label {
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .logo {
-    top: 20%;
+    top: 15%;
     position: absolute;
-    width: 50%;
-    left: 25%; } }
+    width: 90%; } }
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .logo {
     top: 10%;
-    left: 25%;
     position: absolute;
-    width: 50%; }
+    width: 90%; }
 
   header label {
     z-index: 100000;
@@ -215,9 +276,21 @@ header label {
     width: 90%;
     height: 100%;
     padding: 30px 0 0 0; }
+    .cont-1 .btn-voltar {
+      width: 10%;
+      height: 100px;
+      bottom: 4%;
+      right: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .cont-1 .btn-voltar-link {
+      font-size: 0.8em;
+      line-height: 100px; }
 
   .persona {
-    width: 100%;
+    width: 300px;
     height: 100%; } }
 .rodape {
   width: 100%;
@@ -232,6 +305,77 @@ header label {
     .rodape .text-rodape span {
       font-family: "Josefin Sans", sans-serif;
       font-size: 16px; }
+
+#cont-avatar-1 {
+  margin: 50px 0 0 0; }
+
+.cont-avatar {
+  margin: 10px 0;
+  width: 100%;
+  height: auto; }
+  .cont-avatar .cont-img, .cont-avatar .cont-txt {
+    display: block;
+    float: left; }
+    .cont-avatar .cont-img img, .cont-avatar .cont-txt img {
+      width: 100%;
+      box-shadow: 1px 1px 10px #000;
+      border-radius: 10px; }
+  .cont-avatar .cont-img {
+    width: 25%; }
+  .cont-avatar .cont-txt {
+    width: 71%;
+    padding: 0 2%; }
+    .cont-avatar .cont-txt h2 {
+      font-family: "Josefin Sans", sans-serif; }
+    .cont-avatar .cont-txt p {
+      margin: 10px 0;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px; }
+
+.clear {
+  clear: both; }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .cont-avatar .cont-txt h2 {
+    text-align: center;
+    background-color: #383838;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 0;
+    font-size: 18px; }
+  .cont-avatar .cont-txt p {
+    font-size: 18px; } }
+.video-sessao {
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  background-color: red; }
+
+#video-sessao {
+  width: 100%;
+  height: 100%; }
+
+.controle ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; }
+  .controle ul li {
+    width: 25%;
+    margin: 2px; }
+    .controle ul li a {
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-family: "Josefin Sans", sans-serif;
+      background-color: red; }
+    .controle ul li a:hover {
+      background-color: rgba(255, 0, 0, 0.5);
+      color: #000; }
 
 * {
   padding: 0;
