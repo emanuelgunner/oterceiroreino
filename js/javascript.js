@@ -12,3 +12,14 @@ $(document).ready(function(){
 		}); 
 	});	
 });
+
+
+
+
+//PARA O SELECT DOS EPISODIOS FUNCIONAR ================
+
+window.onload = function(){
+    document.getElementById('lista-eps').onchange = function(){
+        window.location = this.value;
+    }
+}
