@@ -280,11 +280,7 @@ header label {
       width: 10%;
       height: 100px;
       bottom: 4%;
-      right: 0;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
+      right: 3%; }
     .cont-1 .btn-voltar-link {
       font-size: 0.8em;
       line-height: 100px; }
