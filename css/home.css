@@ -90,13 +90,13 @@ header label {
     position: fixed;
     width: 130px;
     height: 50px;
-    background-color: rgba(255, 0, 0, 0.5);
-    border-radius: 5px;
+    border: 3px solid rgba(255, 0, 0, 0.5);
+    border-radius: 25px;
     bottom: 4%;
     right: 3%;
     display: none; }
   .cont-1 .btn-voltar:hover {
-    background-color: #f90;
+    background-color: red;
     box-shadow: 1px 1px 5px #000; }
   .cont-1 .btn-voltar-link {
     display: block;
@@ -104,9 +104,11 @@ header label {
     height: 100%;
     line-height: 50px;
     text-align: center;
-    color: #fff;
+    color: rgba(255, 0, 0, 0.5);
     text-decoration: none;
     font-size: 0.8em; }
+  .cont-1 .btn-voltar:hover a {
+    color: #fff; }
 
 .persona {
   width: 30.5%;
