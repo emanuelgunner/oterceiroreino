@@ -276,6 +276,8 @@ header label {
     width: 90%;
     height: 100%;
     padding: 30px 0 0 0; }
+    .cont-1 .parag-1 {
+      ident: 30px; }
     .cont-1 .btn-voltar {
       width: 10%;
       height: 100px;
